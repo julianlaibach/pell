@@ -222,6 +222,8 @@
 	    exec(defaultParagraphSeparatorString, defaultParagraphSeparator);
 	  }
 	  createColorPopup(classes, settings);
+	  console.log(settings.value);
+	  content.innerHTML = settings.value || '';
 	  return settings.element;
 	};
 	var pell = {

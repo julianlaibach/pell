@@ -243,6 +243,10 @@ export const init = settings => {
 
 	createColorPopup(classes, settings)
 
+	console.log(settings.value)
+
+	content.innerHTML = settings.value || ''
+
 	return settings.element
 }
 
