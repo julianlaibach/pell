@@ -2,6 +2,9 @@
 
 ---
 
+!IMPORTANT
+Use Node Version 9
+
 <img src="./images/logo.png" width="128" alt="Logo">
 
 [![npm](https://img.shields.io/npm/v/pell.svg)](https://www.npmjs.com/package/pell)

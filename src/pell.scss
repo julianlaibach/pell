@@ -11,6 +11,7 @@ $pell-content-padding: 10px !default;
 .pell {
   border: $pell-border-width $pell-border-style $pell-border-color;
   box-sizing: border-box;
+  position: relative;
 }
 
 .pell-content {
@@ -38,4 +39,49 @@ $pell-content-padding: 10px !default;
 
 .pell-button-selected {
   background-color: $pell-button-selected-color;
+}
+
+.pell-popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background:rgba(10, 10, 10, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.pell-popup-inner {
+  width: 300px;
+  max-height: 200px;
+  background: #ffffff;
+  min-height: 100px;
+  overflow-y: auto;
+}
+
+.pell-popup-header {
+  background:rgba(10, 10, 10, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.popup-color-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+}
+
+.pell-popup-content {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
 }
